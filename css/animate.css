@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Daniel Eden
+ */
+
+.animated {
+  animation-duration: 2.8s;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function:t ease-in-out; /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in-out;
+}
+
+.animated-delay {
+  animation-duration: 2.8s;
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function:t ease-in-out; /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+
